@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Coding School</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Join Our Coding School!</h1>
+      <p>Full bitte das Formular aus</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section>
+        <form action="#" method="post" autocomplete="off">
+          <fieldset>
+            <legend>Persönliche Information</legend>
+
+            <!-- Firstname -->
+            <div>
+              <label for="firstname">First Name:</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Anne"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+
+            <!-- Lastname -->
+            <div>
+              <label for="lastname">Last Name:</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Müller"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="anne.muller@gmail.com"
+                required
+              />
+            </div>
+
+            <!-- Telephone -->
+            <div>
+              <label for="phone">Telephone:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <!-- Password -->
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+          </fieldset>
+
+          <!-- Kurs auswählen -->
+          <fieldset>
+            <legend>Kurs Information</legend>
+            <!-- Bootcamp Selection -->
+            <div>
+              <label for="bootcamp">Select Bootcamp:</label>
+              <select id="bootcamp" name="bootcamp" required>
+                <option value="" disabled selected>
+                  --Please choose an option--
+                </option>
+                <option value="web">Web Development</option>
+                <option value="app">App Development</option>
+                <option value="data">Data Science</option>
+                <option value="ai">Artificial Intelligence</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Submit Button -->
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
